@@ -1,0 +1,20 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 24px 0;
+}
+
+.service-item {
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 576px) {
+  .services {
+    font-size: 16px;
+  }
+}

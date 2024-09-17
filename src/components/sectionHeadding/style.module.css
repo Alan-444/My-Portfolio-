@@ -1,0 +1,23 @@
+.section_heading {
+  background-color: #101113;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.section-heading h1 {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66.56px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.section_heading p {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 42.36px;
+  letter-spacing: 0.03em;
+  margin: 10px 0 0;
+  color: #87878794;
+}

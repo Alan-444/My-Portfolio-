@@ -1,0 +1,117 @@
+/* .serviceButton {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 32.68px;
+  background-color: #1e1e1e;
+  border: none;
+  padding: 13px 25px;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin: 20px 0;
+  transition: ease-in-out 0.3s;
+}
+
+.serviceButton:hover {
+  box-shadow: 0px 0px 15px #fff;
+  transform: translateY(-5px);
+}
+
+.viewbtn {
+  text-align: center;
+}
+
+.viewAllButton {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25.41px;
+  background-color: #6d6d6d;
+  border: none;
+  padding: 13px 25px;
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 50px;
+  transition: ease-in-out 0.3s;
+}
+
+.viewAllButton:hover {
+  box-shadow: 0px 0px 10px #fff;
+  transform: translateY(-5px);
+} */
+
+/* Light effect on hover for buttons */
+
+.serviceButton,
+.viewAllButton {
+  position: relative;
+  overflow: hidden;
+  font-size: inherit;
+}
+
+.serviceButton::before,
+.viewAllButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  transition: all 0.5s ease-in-out;
+  transform: skewX(-20deg);
+}
+
+.serviceButton:hover::before,
+.viewAllButton:hover::before {
+  left: 100%;
+}
+
+.serviceButton,
+.viewAllButton {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 32.68px;
+  background-color: #1e1e1e;
+  border: none;
+  padding: 13px 25px;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 2px solid #aaa;
+}
+
+.serviceButton:hover,
+.viewAllButton:hover {
+  box-shadow: 0px 0px 15px #fff;
+  transform: translateY(-5px);
+  border-color: #ffd700;
+}
+
+.viewbtn {
+  text-align: center;
+}
+
+.viewAllButton {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25.41px;
+  background-color: #6d6d6d;
+  border: none;
+  padding: 13px 25px;
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 50px;
+}
+
+.viewAllButton:hover {
+  box-shadow: 0px 0px 10px #fff;
+}
